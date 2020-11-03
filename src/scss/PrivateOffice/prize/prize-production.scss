@@ -1,0 +1,454 @@
+@import '../../colors';
+
+.PrivateOffice {
+
+    & .prize-production {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        &__wrap {
+            margin-top: 80px;
+            margin-bottom: 110px;
+            width: 1100px;
+            display: flex;
+            // outline: 1px solid blue;
+        }
+        &__title {
+            // margin-right: 50px;
+
+            &-text {
+                font-family: 'TTMilksScript-Regular';
+                font-size: 45px;
+                color: #fff;
+                writing-mode: vertical-rl;
+                transform: rotate(180deg) translate(50px, 0);
+            }
+        }
+        &__content {
+            // margin-left: 50px;
+            &-slider {
+                display: none;
+            }
+
+            &-title {
+                font-family: 'Roboto-Regular';
+                font-size: 28px;
+                color: #fff;
+            }
+            &-text {
+                width: 890px;
+                font-family: 'Roboto-Light';
+                font-size: 20px;
+                color: #fff;
+                margin-top: 30px;
+            }
+            &-list {
+                margin-top: 47px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+                width: 900px;
+            }
+            &-items {
+                display: flex;
+                flex-direction: column;
+                margin-left: 25px;
+                margin-bottom: 40px;
+                width: 230px;
+                &:first-child {
+                    margin-left: 0;
+                }
+                &-title {
+                    margin-top: 30px;
+                    font-family: 'Roboto-Medium';
+                    font-size: 14px;
+                    text-transform: uppercase;
+                    color: #fff;  
+                    line-height: 1.5;
+                }
+                &-text {
+                    font-family: 'Roboto-Light';
+                    font-size: 14px;
+                    color: #fff;  
+                    margin-top: 15px;
+                    line-height: 1.5;
+                }
+            }
+            &-item {
+                width: 230px;
+                height: 230px;
+                border: 2px solid #ff906b;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                &-img {
+                    transition: all 1s;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 1225px) {
+
+
+    .PrivateOffice {
+    
+        & .prize-production {
+            justify-content: center;//start
+            margin-top: 50px;
+            position: relative;
+            margin-bottom: 0px;
+    
+            &__wrap {
+                padding-top: 50px;
+                // width: 1100px;
+                // display: flex;
+                flex-direction: column;
+                padding-left: 15px;
+                margin-bottom: 0px;
+                align-items: center;//unset
+            }
+            &__title {
+                // margin-right: 50px;
+                margin-bottom: 30px;
+    
+                &-text {
+                    // font-family: 'TTMilksScript-Regular';
+                    font-size: 60px;
+                    // color: #fff;
+                    writing-mode: lr;
+                    transform: rotate(0deg);
+                }
+            }
+
+            &__content {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                &-slider {
+                    display: block;
+                    position: relative;
+                    width: 750px;
+                    margin-left: 0px;
+                    margin-top: 30px;
+                }
+    
+                &-title {
+                    font-family: 'Roboto-Regular';
+                    font-size: 25px;
+                    color: #fff;
+                    width: auto;
+                }
+                &-text {
+                    width: 750px;
+                    font-family: 'Roboto-Light';
+                    font-size: 15px;
+                    color: #fff;
+                    margin-top: 30px;
+                    text-align: center;
+                }
+                &-list {
+                    margin-top: 47px;
+                    display: none;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    width: auto;
+                }
+                &-items {
+                    display: flex;
+                    flex-direction: column;
+                    margin-left: 0px;
+                    margin-bottom: 0px;
+                    width: 230px;
+                    &-title {
+                        margin-top: 30px;
+                        font-family: 'Roboto-Medium';
+                        font-size: 14px;
+                        text-transform: uppercase;
+                        color: #fff;  
+                        line-height: 1.5;
+                    }
+                    &-text {
+                        font-family: 'Roboto-Light';
+                        font-size: 14px;
+                        color: #fff;  
+                        margin-top: 15px;
+                        line-height: 1.5;
+                    }
+                }
+                &-item {
+                    width: 230px;
+                    height: 230px;
+                    border: 2px solid #ff906b;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+    }    
+
+
+    .prize-production__content-slider .slick-arrow {
+        font-size: 0;
+        position: absolute;
+        width: 33px;
+        height: 33px;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 17px rgba(0, 0, 0, 0.06);
+        border-radius: 50%;
+        top: 115px;
+        // transform: scaleY(-50%);
+        z-index: 10;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    .prize-production__content-slider .slick-prev {
+        background-size: cover;
+        background-repeat: no-repeat;
+        left: 0px;
+        &:hover {
+            left: -3px;
+        }
+    
+        &:after {
+            position: absolute;
+            content: '';
+            width: 14px;
+            height: 19px;
+            background: url('../img/PrivateOffice/arrow-orange.svg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+    .prize-production__content-slider .slick-next {
+        transform: rotate(180deg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        right: -10px;
+        &:hover {
+            right: -13px;
+        }
+        &:after {
+            position: absolute;
+            content: '';
+            width: 14px;
+            height: 19px;
+            background: url('../img/PrivateOffice/arrow-orange.svg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+    
+    .prize-production__content-slider .slick-slide {
+        padding: 15px;
+        outline: none;
+    }
+    
+    .prize-production__content-slider {
+        margin: -15px;
+    }
+    
+
+}
+
+
+@media (max-width: 830px) {
+
+    .PrivateOffice {
+
+        & .prize-production {
+
+    
+            &__content {
+
+                &-slider {
+                    width: 507px;//260
+                }
+            }
+        }
+    }
+}
+
+
+
+
+@media (max-width: 750px) {
+
+
+    .PrivateOffice {
+    
+        & .prize-production {
+            justify-content: center;//start
+            margin-top: 50px;
+            position: relative;
+            margin-bottom: 0px;
+    
+            &__wrap {
+                margin-top: 30px;
+                // width: 1100px;
+                // display: flex;
+                flex-direction: column;
+                padding-left: 20px;
+                padding-right: 20px;
+                margin-bottom: 0px;
+                align-items: center;//unset
+            }
+            &__title {
+                // margin-right: 50px;
+    
+                &-text {
+                    // font-family: 'TTMilksScript-Regular';
+                    font-size: 32px;
+                    // color: #fff;
+                    writing-mode: lr;
+                    transform: rotate(0deg);
+                }
+            }
+
+            &__content {
+
+                &-slider {
+                    display: block;
+                    position: relative;
+                    width: 260px;
+                    margin-left: 10px;
+                    margin-top: 30px;
+                }
+    
+                &-title {
+                    font-family: 'Roboto-Regular';
+                    font-size: 22px;
+                    color: #fff;
+                    width: auto;
+                    text-align: left;
+                }
+                &-text {
+                    width: auto;
+                    font-family: 'Roboto-Light';
+                    font-size: 16px;
+                    color: #fff;
+                    margin-top: 30px;
+                    text-align: left;
+                }
+                &-list {
+                    margin-top: 47px;
+                    display: none;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                }
+                &-items {
+                    display: flex;
+                    flex-direction: column;
+                    margin-left: 0px;
+                    margin-bottom: 0px;
+                    width: 230px;
+                    &-title {
+                        margin-top: 30px;
+                        font-family: 'Roboto-Medium';
+                        font-size: 14px;
+                        text-transform: uppercase;
+                        color: #fff;  
+                        line-height: 1.5;
+                    }
+                    &-text {
+                        font-family: 'Roboto-Light';
+                        font-size: 14px;
+                        color: #fff;  
+                        margin-top: 15px;
+                        line-height: 1.5;
+                    }
+                }
+                &-item {
+                    width: 230px;
+                    height: 230px;
+                    border: 2px solid #ff906b;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+    }    
+
+
+    .prize-production__content-slider .slick-arrow {
+        font-size: 0;
+        position: absolute;
+        width: 33px;
+        height: 33px;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 17px rgba(0, 0, 0, 0.06);
+        border-radius: 50%;
+        top: 115px;
+        // transform: scaleY(-50%);
+        z-index: 10;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    .prize-production__content-slider .slick-prev {
+        background-size: cover;
+        background-repeat: no-repeat;
+        left: 0px;
+    
+        &:after {
+            position: absolute;
+            content: '';
+            width: 14px;
+            height: 19px;
+            background: url('../img/PrivateOffice/arrow-orange.svg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+    .prize-production__content-slider .slick-next {
+        transform: rotate(180deg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        right: 0px;
+        &:after {
+            position: absolute;
+            content: '';
+            width: 14px;
+            height: 19px;
+            background: url('../img/PrivateOffice/arrow-orange.svg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+    
+    .prize-production__content-slider .slick-slide {
+        padding: 15px;
+        outline: none;
+    }
+    
+    .prize-production__content-slider {
+        margin: -15px;
+    }
+    
+
+}

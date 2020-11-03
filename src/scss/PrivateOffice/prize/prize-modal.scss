@@ -1,0 +1,37 @@
+@import '../../colors';
+
+.prize-modal {
+    padding: 40px 20px;
+
+    &__title {
+        font-family: 'TTMilksScript-Regular';
+        font-size: 45px;
+        color: $PrivateOfficeMainBg;
+        margin-bottom: 20px;
+    }
+    &__list {
+        margin: 0;
+        margin-bottom: 30px;
+    }
+    &__item {
+        color: #666;
+        font-family: 'Roboto-Light';
+        font-size: 20px;
+        margin-bottom: 10px;
+
+        &--link {
+            text-decoration: underline;
+            color: #666;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    &__link {
+        color: $PrivateOfficeMainBg;
+        font-family: 'Roboto-Light';
+        font-size: 20px;
+        text-decoration: underline;
+    }
+}

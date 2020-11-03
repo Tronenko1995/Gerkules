@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Модерация участников</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+
+<div class="moderate">
+    <div class="moderate__wrap">
+        <div class="moderate__head">
+            <p class="moderate__head-title">Модерация участников</p>
+        </div>
+        <div class="moderate__bottom">
+            <div class="moderate__bottom-item MegaClick">
+                <p id="name" class="moderate__bottom-item-text click">Иван Петров</p>
+                <p id="phone" class="moderate__bottom-item-text click">+79815000000</p>
+                <p id="email" class="moderate__bottom-item-text click">ivanpetrovich@mail.ru</p>
+                <p id="" class="moderate__bottom-item-text moderate__bottom-item-text--datetime click">25-09-2020 11:23</p>
+                <button class="moderate__bottom-item-button">Отправить подарок</button>
+            </div>
+            <div class="moderate__bottom-item MegaClick">
+                <p id="name" class="moderate__bottom-item-text click">Сергей Иванов</p>
+                <p id="phone" class="moderate__bottom-item-text click">+79815837914</p>
+                <p id="email" class="moderate__bottom-item-text click">sergivan86@mail.ru</p>
+                <p id="" class="moderate__bottom-item-text moderate__bottom-item-text--datetime click">15-09-2020 18:23</p>
+                <button class="moderate__bottom-item-button">Отправить подарок</button>
+            </div>  
+        </div>
+        <div class="moderate__pagination">
+            <a class="moderate__pagination-link" href="#">1</a>
+            <a class="moderate__pagination-link moderate__pagination-link--active" href="#">2</a>
+            <a class="moderate__pagination-link" href="#">3</a>
+            <a class="moderate__pagination-link" href="#">4</a>
+            <a class="moderate__pagination-link" href="#">5</a>
+            <a class="moderate__pagination-link" href="#">6</a>
+        </div>
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script>
+/* PAGINATION */
+$('.moderate__pagination-link').on('click', function() {
+    console.log($(this).text());
+    $('.moderate__pagination-link').removeClass('moderate__pagination-link--active');
+    $(this).addClass('moderate__pagination-link--active');
+});
+</script>
+
+</body>
+</html>

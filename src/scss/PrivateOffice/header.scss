@@ -1,0 +1,134 @@
+@import '../colors';
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: #fff;
+
+    &__wrap {
+        width: 1140px;
+        display: flex;
+        align-items: center;
+        position: relative;
+        justify-content: space-between;
+    }
+    &__logo-link {
+        width: 124px;
+        height: 93px;
+        position: absolute;
+        top: 0;
+    }
+    &__logo-img {
+        width: 124px;
+        height: 93px;
+        position: absolute;
+        align-self: normal;
+    }
+    &__nav {
+        display: flex;
+        padding-left: 40px;
+        margin-left: 124px;
+    }
+    &__item {
+        margin: 30px 50px 30px 0;
+    }
+    &__link {
+        color: #00206e;
+        font-size: 16px;
+        font-family: 'Roboto-Regular';
+        width: 100px;
+        overflow-wrap: break-word;
+
+        &:hover {
+            color: #1a4bc3;
+        }
+    }
+    &__login {
+        display: flex;
+        align-items: center;
+        
+        &-svg {
+            width: 24px;
+            height: 24px;
+            fill: #ff5319;
+            margin-right: 20px;
+            opacity: 0.5;
+            cursor: pointer;
+
+            &:hover {
+                opacity: 0.7;
+            }
+            &:active {
+                opacity: 1;
+            }
+        }
+        &-name {
+            color: #ff5319;
+            font-size: 16px;
+            font-family: 'Roboto-Regular';
+            width: 100px;
+            overflow-wrap: break-word;
+        }
+        &-link {
+            display: inline-flex;
+        }
+    }
+    &__button {
+        font-size: 16px;
+        font-family: 'Roboto-Regular';
+        background: $PrivateOfficeButtonBg;
+        border: 0;
+        outline: none;
+        color: #fff;
+        padding: 15px 35px;
+        border-radius: 30px;
+        cursor: pointer;
+
+        &:hover {
+            background: $PrivateOfficeButtonBgHover;
+        }
+        &:active {
+            background: $PrivateOfficeButtonBgActive;
+        }
+    }
+}
+
+.PrivateOffice--landing .header {
+    position: fixed;
+    z-index: 100;
+}
+
+@media (max-width: 1180px) {
+    .header {
+        &__wrap {
+            justify-content: flex-end;
+            margin: 0 15px;
+        }
+        &__logo-link {
+            left: 0px;
+            width: 80px;
+            height: 60px;
+        }
+        &__logo-img {
+            left: 0px;
+            width: 80px;
+            height: 60px;
+        }
+
+        &__nav,
+        &__button {
+            display: none;
+        }
+        &__login {
+            margin: 17px 0 12px 0;
+            position: relative;//
+            width: 140px;//
+
+            &-name {
+                position: absolute;
+                left: 40px;
+            }
+        }
+    }
+}

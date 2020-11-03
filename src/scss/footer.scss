@@ -1,0 +1,213 @@
+@import 'colors';
+
+.PrivateOffice {
+
+    .footer {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 9px;
+        position: relative;
+
+        &::before {
+            content: '';
+            background: #ffa98c;
+            height: 2px;
+            width: 100%;
+            position: absolute;
+            top: -2px;
+        }
+    
+        &__wrap {
+            width: 1140px;
+            display: flex;
+            align-items: center;
+            position: relative;
+            justify-content: space-between;
+            padding: 20px 0 24px 0;
+        }
+        &__right {
+            display: flex;
+        }
+        &__logo-link {
+            width: 124px;
+            height: 93px;
+            // position: absolute;
+            top: 0;
+        }
+        &__logo-img {
+            width: 124px;
+            height: 93px;
+            // position: absolute;
+            // align-self: normal;
+        }
+        &__block {
+            display: flex;
+            flex-direction: column;
+            &-text {
+                font-size: 14px;
+                font-family: 'Roboto-Light';
+                color: #ffb5a5;
+                margin-bottom: 14px;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+
+                &--link {
+                    text-decoration: underline;
+                }
+            }
+            &--2 {
+                margin-left: 90px;
+            }
+        }
+    }
+
+}
+
+@media(max-width: 1180px) {
+
+.PrivateOffice {
+
+    .footer {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 9px;
+        position: relative;
+
+        &::before {
+            content: '';
+            background: #ffa98c;
+            height: 2px;
+            width: 100%;
+            position: absolute;
+            top: -2px;
+        }
+    
+        &__wrap {
+            width: 1140px;
+            display: flex;
+            align-items: center;
+            position: relative;
+            justify-content: space-between;
+            padding: 20px 0 24px 0;
+            margin: 0 15px;
+        }
+        &__right {
+            display: flex;
+        }
+        &__logo-link {
+            width: 80px;
+            height: 60px;
+            // position: absolute;
+            top: 0;
+        }
+        &__logo-img {
+            width: 80px;
+            height: 60px;
+            // position: absolute;
+            // align-self: normal;
+        }
+        &__block {
+            display: flex;
+            flex-direction: column;
+            &-text {
+                font-size: 14px;
+                font-family: 'Roboto-Light';
+                color: #ffb5a5;
+                margin-bottom: 14px;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+
+                &--link {
+                    text-decoration: underline;
+                }
+            }
+            &--2 {
+                margin-left: 90px;
+            }
+        }
+    }
+
+}
+
+}
+
+@media(max-width: 700px) {
+
+    .PrivateOffice {
+    
+        .footer {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-top: 9px;
+            position: relative;
+    
+            &::before {
+                content: '';
+                background: #ffa98c;
+                height: 2px;
+                width: 100%;
+                position: absolute;
+                top: -2px;
+            }
+        
+            &__wrap {
+                width: 1140px;
+                display: flex;
+                align-items: center;
+                position: relative;
+                justify-content: space-between;
+                padding: 20px 0 24px 0;
+                margin: 0 15px;
+            }
+            &__right {
+                margin-left: 15px;
+                display: flex;
+                flex-direction: column;
+            }
+            &__logo-link {
+                width: 80px;
+                height: 60px;
+                // position: absolute;
+                top: 0;
+            }
+            &__logo-img {
+                width: 80px;
+                height: 60px;
+                // position: absolute;
+                // align-self: normal;
+            }
+            &__block {
+                display: flex;
+                flex-direction: column;
+                &-text {
+                    font-size: 14px;
+                    font-family: 'Roboto-Light';
+                    color: #ffb5a5;
+                    margin-bottom: 10px;
+    
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+    
+                    &--link {
+                        text-decoration: underline;
+                    }
+                }
+                &--2 {
+                    margin-left: 0px;
+                    order: -1;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    
+    }
+    
+    }

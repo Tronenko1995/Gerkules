@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Личный Кабинет</title>
+    <link rel="stylesheet" href="css/dropzone.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body class="PrivateOffice">
+    <header class="header">
+        <div class="header__wrap">
+            <a href="#" class="header__logo-link">
+                <img class="header__logo-img" src="img/PrivateOffice/logo.png" alt="" width="124" height="93">
+            </a>
+            <ul class="header__nav">
+                <li class="header__item">
+                    <a href="" class="header__link">Правила акции</a>
+                </li>
+                <li class="header__item">
+                    <a href="" class="header__link">Подарки</a>
+                </li>
+                <li class="header__item">
+                    <a href="" class="header__link">Продукция</a>
+                </li>
+                <li class="header__item">
+                    <a href="" class="header__link">Победители</a>
+                </li>
+                <li class="header__item">
+                    <a href="" class="header__link">FAQ</a>
+                </li>
+            </ul>
+            <div class="header__login">
+                <a href="#" class="header__login-link" title="Выход">
+                <svg class="header__login-svg" version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                viewBox="0 0 512 448" style="enable-background:new 0 0 512 448;" xml:space="preserve">
+                    <path d="M192,213.3c-58.8,0-106.7-47.8-106.7-106.7S133.2,0,192,0s106.7,47.9,106.7,106.7S250.8,213.3,192,213.3z M192,32 c-41.2,0-74.7,33.5-74.7,74.7c0,41.2,33.5,74.7,74.7,74.7s74.7-33.5,74.7-74.7C266.7,65.5,233.2,32,192,32z"/>
+                    <path d="M368,448H16c-8.8,0-16-7.2-16-16v-74.7C0,301.5,45.5,256,101.3,256h181.3c55.9,0,101.3,45.5,101.3,101.3V432 C384,440.8,376.8,448,368,448z M32,416h320v-58.7c0-38.2-31.1-69.3-69.3-69.3H101.3C63.1,288,32,319.1,32,357.3V416z"/>
+                    <path d="M496,218.7H314.7c-8.8,0-16-7.2-16-16s7.2-16,16-16H496c8.8,0,16,7.2,16,16S504.8,218.7,496,218.7z"/>
+                    <path d="M410.7,304c-4.1,0-8.2-1.6-11.3-4.7c-6.2-6.3-6.2-16.4,0-22.6l74-74l-74-74c-6.2-6.2-6.2-16.4,0-22.6 c6.2-6.2,16.4-6.2,22.6,0l85.3,85.3c6.2,6.2,6.2,16.4,0,22.6L422,299.3C418.8,302.4,414.7,304,410.7,304z"/>
+                </svg>
+                </a>
+                <p class="header__login-name">Иван П.</p>
+            </div>
+            <button class="header__button">Отправить чек</button>
+        </div>
+    </header>
+
+    <div class="main">
+        <div class="main__wrap">
+
+            <div class="sidebar">
+                <p class="sidebar__title">Личный кабинет</p>
+                <ul class="sidebar__nav">
+                    <li class="sidebar__item">
+                        <a href="" class="sidebar__link">Загрузить чек</a>
+                    </li>
+                    <li class="sidebar__item">
+                        <a href="" class="sidebar__link">Чеки и статусы</a>
+                    </li>
+                    <li class="sidebar__item">
+                        <a href="PrivateOffice.html" class="sidebar__link sidebar__link--active">Подарки</a>
+                    </li>
+                    <li class="sidebar__item">
+                        <a href="PrivateOffice-password.html" class="sidebar__link">Изменить пароль</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="content">
+    
+                <div class="content__top">
+                    <button class="content__top-button" id="upload_photos">Загрузить чек</button>
+                </div>
+    
+                <!-- <div class="content__center">
+                    <div class="content__center-week">
+                        <p class="content__center-week-text">2-я неделя</p>
+                    </div>
+                    <div class="content__center-container">
+                        <p class="content__center-title">Чеки и статусы</p>
+                    </div>
+                </div> -->
+
+                <div class="content__center">
+                    <p class="content__center-title">Чеки и статусы</p>
+        
+                    <div class="content__center-container">
+                        <div class="content__center-week">
+                            <p class="content__center-week-text"><span id="">2</span>-я неделя</p>
+                        </div>
+                        <div class="content__center-items">
+
+                            <div class="content__center-item">
+                                <div class="content__center-item-line-1">
+                                    <p class="content__center-item-text">Чек №<span id="">6</span></p>
+                                    <p class="content__center-item-text">01.10.2020</p>
+                                    <svg class="content__center-item-svg" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 396 315" style="enable-background:new 0 0 396 315;" xml:space="preserve">
+                                        <path d="M266.7,183.7c0-10.2-2.2-19.9-6.4-29.1c-1.8-3.8-6.2-5.4-10-3.6c-3.8,1.8-5.4,6.2-3.6,10c3.3,7.1,5,14.8,5,22.7 c0,29.6-24.1,53.7-53.7,53.7s-53.7-24.1-53.7-53.7s24.1-53.7,53.7-53.7c10.7,0,21,3.1,29.8,9c3.4,2.3,8.1,1.4,10.4-2.1 s1.4-8.1-2.1-10.4c-11.3-7.6-24.5-11.6-38.2-11.6c-37.9,0-68.7,30.8-68.7,68.7s30.8,68.7,68.7,68.7 C235.9,252.4,266.7,221.6,266.7,183.7z"/>
+                                        <path d="M198,173.6c4.1,0,7.5-3.4,7.5-7.5s-3.4-7.5-7.5-7.5c-13.9,0-25.2,11.3-25.2,25.2c0,13.9,11.3,25.2,25.2,25.2 c13.9,0,25.2-11.3,25.2-25.2c0-4.1-3.4-7.5-7.5-7.5s-7.5,3.4-7.5,7.5c0,5.6-4.6,10.2-10.2,10.2s-10.2-4.6-10.2-10.2 C187.8,178.1,192.4,173.6,198,173.6z"/>
+                                        <path d="M388.5,52.5h-13.7V34c0-4.1-3.4-7.5-7.5-7.5h-65.6c-4.1,0-7.5,3.4-7.5,7.5v18.5h-16.8L266.9,5.9c-0.8-3.4-3.8-5.9-7.3-5.9 H136.4c-3.5,0-6.6,2.4-7.3,5.9l-10.5,46.6H76.1V24c0-4.1-3.4-7.5-7.5-7.5h-30c-4.1,0-7.5,3.4-7.5,7.5v28.5H7.5 C3.4,52.5,0,55.9,0,60v247.5c0,4.1,3.4,7.5,7.5,7.5h381c4.1,0,7.5-3.4,7.5-7.5V60C396,55.9,392.6,52.5,388.5,52.5z M309.2,41.5 h50.6v11h-50.6V41.5z M46.1,31.5h15v21h-15V31.5z M124.6,67.5c3.5,0,6.6-2.4,7.3-5.9L142.4,15h111.2l10.5,46.6 c0.8,3.4,3.8,5.9,7.3,5.9H381V108H263.9c-17.6-15.4-40.7-24.7-65.9-24.7s-48.2,9.3-65.9,24.7H15V67.5 C15,67.5,124.6,67.5,124.6,67.5z M112.6,183.7c0-47.1,38.3-85.4,85.4-85.4s85.4,38.3,85.4,85.4c0,47.1-38.3,85.4-85.4,85.4 S112.6,230.9,112.6,183.7z M124.4,252H15V123h103.1c-12.9,16.9-20.5,37.9-20.5,60.8C97.6,210.1,107.7,234.1,124.4,252z M298.4,183.7c0-22.8-7.6-43.9-20.5-60.8H381v129H271.6C288.2,234.1,298.4,210.1,298.4,183.7z M15,300v-33h126.9 c16,10.8,35.4,17.2,56.1,17.2c20.8,0,40.1-6.3,56.1-17.2H381v33L15,300L15,300z"/>
+                                        <path d="M150.2,67.5h95.5c2.3,0,4.4-1,5.9-2.8c1.4-1.8,2-4.1,1.5-6.3l-6.2-27.5c-0.8-3.4-3.8-5.9-7.3-5.9h-83.2 c-3.5,0-6.6,2.4-7.3,5.9l-6.2,27.5c-0.5,2.2,0,4.6,1.5,6.3C145.8,66.5,148,67.5,150.2,67.5z M162.4,40h71.2l2.8,12.5h-76.8 L162.4,40z"/>
+                                    </svg>
+                                    <p class="content__center-item-text content__center-item-text--count">Хлеб: <span id="">1</span></p>
+                                    <p class="content__center-item-text content__center-item-text--status">На проверке</p>
+                                </div>
+                            </div>
+
+                            <div class="content__center-item">
+                                <div class="content__center-item-line-1">
+                                    <p class="content__center-item-text">Чек №<span id="">5</span></p>
+                                    <p class="content__center-item-text">27.09.2020</p>
+                                    <svg class="content__center-item-svg" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 396 315" style="enable-background:new 0 0 396 315;" xml:space="preserve">
+                                        <path d="M266.7,183.7c0-10.2-2.2-19.9-6.4-29.1c-1.8-3.8-6.2-5.4-10-3.6c-3.8,1.8-5.4,6.2-3.6,10c3.3,7.1,5,14.8,5,22.7 c0,29.6-24.1,53.7-53.7,53.7s-53.7-24.1-53.7-53.7s24.1-53.7,53.7-53.7c10.7,0,21,3.1,29.8,9c3.4,2.3,8.1,1.4,10.4-2.1 s1.4-8.1-2.1-10.4c-11.3-7.6-24.5-11.6-38.2-11.6c-37.9,0-68.7,30.8-68.7,68.7s30.8,68.7,68.7,68.7 C235.9,252.4,266.7,221.6,266.7,183.7z"/>
+                                        <path d="M198,173.6c4.1,0,7.5-3.4,7.5-7.5s-3.4-7.5-7.5-7.5c-13.9,0-25.2,11.3-25.2,25.2c0,13.9,11.3,25.2,25.2,25.2 c13.9,0,25.2-11.3,25.2-25.2c0-4.1-3.4-7.5-7.5-7.5s-7.5,3.4-7.5,7.5c0,5.6-4.6,10.2-10.2,10.2s-10.2-4.6-10.2-10.2 C187.8,178.1,192.4,173.6,198,173.6z"/>
+                                        <path d="M388.5,52.5h-13.7V34c0-4.1-3.4-7.5-7.5-7.5h-65.6c-4.1,0-7.5,3.4-7.5,7.5v18.5h-16.8L266.9,5.9c-0.8-3.4-3.8-5.9-7.3-5.9 H136.4c-3.5,0-6.6,2.4-7.3,5.9l-10.5,46.6H76.1V24c0-4.1-3.4-7.5-7.5-7.5h-30c-4.1,0-7.5,3.4-7.5,7.5v28.5H7.5 C3.4,52.5,0,55.9,0,60v247.5c0,4.1,3.4,7.5,7.5,7.5h381c4.1,0,7.5-3.4,7.5-7.5V60C396,55.9,392.6,52.5,388.5,52.5z M309.2,41.5 h50.6v11h-50.6V41.5z M46.1,31.5h15v21h-15V31.5z M124.6,67.5c3.5,0,6.6-2.4,7.3-5.9L142.4,15h111.2l10.5,46.6 c0.8,3.4,3.8,5.9,7.3,5.9H381V108H263.9c-17.6-15.4-40.7-24.7-65.9-24.7s-48.2,9.3-65.9,24.7H15V67.5 C15,67.5,124.6,67.5,124.6,67.5z M112.6,183.7c0-47.1,38.3-85.4,85.4-85.4s85.4,38.3,85.4,85.4c0,47.1-38.3,85.4-85.4,85.4 S112.6,230.9,112.6,183.7z M124.4,252H15V123h103.1c-12.9,16.9-20.5,37.9-20.5,60.8C97.6,210.1,107.7,234.1,124.4,252z M298.4,183.7c0-22.8-7.6-43.9-20.5-60.8H381v129H271.6C288.2,234.1,298.4,210.1,298.4,183.7z M15,300v-33h126.9 c16,10.8,35.4,17.2,56.1,17.2c20.8,0,40.1-6.3,56.1-17.2H381v33L15,300L15,300z"/>
+                                        <path d="M150.2,67.5h95.5c2.3,0,4.4-1,5.9-2.8c1.4-1.8,2-4.1,1.5-6.3l-6.2-27.5c-0.8-3.4-3.8-5.9-7.3-5.9h-83.2 c-3.5,0-6.6,2.4-7.3,5.9l-6.2,27.5c-0.5,2.2,0,4.6,1.5,6.3C145.8,66.5,148,67.5,150.2,67.5z M162.4,40h71.2l2.8,12.5h-76.8 L162.4,40z"/>
+                                    </svg>
+                                    <p class="content__center-item-text content__center-item-text--count">Хлеб: <span id="">1</span></p>
+                                    <p class="content__center-item-text content__center-item-text--status content__center-item-text--error">Отклонен</p>
+                                </div>
+                                <div class="content__center-item-line-2">
+                                    <p class="content__center-item-comment-title">Комментарий модератора:</p>
+                                    <p class="content__center-item-comment-text">В чеке нет акционной продукции</p>
+                                </div>
+                            </div>
+
+                            <div class="content__center-item">
+                                <div class="content__center-item-line-1">
+                                    <p class="content__center-item-text">Чек №<span id="">4</span></p>
+                                    <p class="content__center-item-text">25.09.2020</p>
+                                    <svg class="content__center-item-svg" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 396 315" style="enable-background:new 0 0 396 315;" xml:space="preserve">
+                                        <path d="M266.7,183.7c0-10.2-2.2-19.9-6.4-29.1c-1.8-3.8-6.2-5.4-10-3.6c-3.8,1.8-5.4,6.2-3.6,10c3.3,7.1,5,14.8,5,22.7 c0,29.6-24.1,53.7-53.7,53.7s-53.7-24.1-53.7-53.7s24.1-53.7,53.7-53.7c10.7,0,21,3.1,29.8,9c3.4,2.3,8.1,1.4,10.4-2.1 s1.4-8.1-2.1-10.4c-11.3-7.6-24.5-11.6-38.2-11.6c-37.9,0-68.7,30.8-68.7,68.7s30.8,68.7,68.7,68.7 C235.9,252.4,266.7,221.6,266.7,183.7z"/>
+                                        <path d="M198,173.6c4.1,0,7.5-3.4,7.5-7.5s-3.4-7.5-7.5-7.5c-13.9,0-25.2,11.3-25.2,25.2c0,13.9,11.3,25.2,25.2,25.2 c13.9,0,25.2-11.3,25.2-25.2c0-4.1-3.4-7.5-7.5-7.5s-7.5,3.4-7.5,7.5c0,5.6-4.6,10.2-10.2,10.2s-10.2-4.6-10.2-10.2 C187.8,178.1,192.4,173.6,198,173.6z"/>
+                                        <path d="M388.5,52.5h-13.7V34c0-4.1-3.4-7.5-7.5-7.5h-65.6c-4.1,0-7.5,3.4-7.5,7.5v18.5h-16.8L266.9,5.9c-0.8-3.4-3.8-5.9-7.3-5.9 H136.4c-3.5,0-6.6,2.4-7.3,5.9l-10.5,46.6H76.1V24c0-4.1-3.4-7.5-7.5-7.5h-30c-4.1,0-7.5,3.4-7.5,7.5v28.5H7.5 C3.4,52.5,0,55.9,0,60v247.5c0,4.1,3.4,7.5,7.5,7.5h381c4.1,0,7.5-3.4,7.5-7.5V60C396,55.9,392.6,52.5,388.5,52.5z M309.2,41.5 h50.6v11h-50.6V41.5z M46.1,31.5h15v21h-15V31.5z M124.6,67.5c3.5,0,6.6-2.4,7.3-5.9L142.4,15h111.2l10.5,46.6 c0.8,3.4,3.8,5.9,7.3,5.9H381V108H263.9c-17.6-15.4-40.7-24.7-65.9-24.7s-48.2,9.3-65.9,24.7H15V67.5 C15,67.5,124.6,67.5,124.6,67.5z M112.6,183.7c0-47.1,38.3-85.4,85.4-85.4s85.4,38.3,85.4,85.4c0,47.1-38.3,85.4-85.4,85.4 S112.6,230.9,112.6,183.7z M124.4,252H15V123h103.1c-12.9,16.9-20.5,37.9-20.5,60.8C97.6,210.1,107.7,234.1,124.4,252z M298.4,183.7c0-22.8-7.6-43.9-20.5-60.8H381v129H271.6C288.2,234.1,298.4,210.1,298.4,183.7z M15,300v-33h126.9 c16,10.8,35.4,17.2,56.1,17.2c20.8,0,40.1-6.3,56.1-17.2H381v33L15,300L15,300z"/>
+                                        <path d="M150.2,67.5h95.5c2.3,0,4.4-1,5.9-2.8c1.4-1.8,2-4.1,1.5-6.3l-6.2-27.5c-0.8-3.4-3.8-5.9-7.3-5.9h-83.2 c-3.5,0-6.6,2.4-7.3,5.9l-6.2,27.5c-0.5,2.2,0,4.6,1.5,6.3C145.8,66.5,148,67.5,150.2,67.5z M162.4,40h71.2l2.8,12.5h-76.8 L162.4,40z"/>
+                                    </svg>
+                                    <p class="content__center-item-text content__center-item-text--count">Хлеб: <span id="">3</span></p>
+                                    <p class="content__center-item-text content__center-item-text--status content__center-item-text--success">Одобрен</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="content__center-container content__center-container--disabled">
+                        <div class="content__center-week">
+                            <p class="content__center-week-text"><span id="">1</span>-я неделя</p>
+                        </div>
+                        <div class="content__center-items">
+
+                            <div class="content__center-item">
+                                <div class="content__center-item-line-1">
+                                    <p class="content__center-item-text">Чек №<span id="">3</span></p>
+                                    <p class="content__center-item-text">20.09.2020</p>
+                                    <svg class="content__center-item-svg" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 396 315" style="enable-background:new 0 0 396 315;" xml:space="preserve">
+                                        <path d="M266.7,183.7c0-10.2-2.2-19.9-6.4-29.1c-1.8-3.8-6.2-5.4-10-3.6c-3.8,1.8-5.4,6.2-3.6,10c3.3,7.1,5,14.8,5,22.7 c0,29.6-24.1,53.7-53.7,53.7s-53.7-24.1-53.7-53.7s24.1-53.7,53.7-53.7c10.7,0,21,3.1,29.8,9c3.4,2.3,8.1,1.4,10.4-2.1 s1.4-8.1-2.1-10.4c-11.3-7.6-24.5-11.6-38.2-11.6c-37.9,0-68.7,30.8-68.7,68.7s30.8,68.7,68.7,68.7 C235.9,252.4,266.7,221.6,266.7,183.7z"/>
+                                        <path d="M198,173.6c4.1,0,7.5-3.4,7.5-7.5s-3.4-7.5-7.5-7.5c-13.9,0-25.2,11.3-25.2,25.2c0,13.9,11.3,25.2,25.2,25.2 c13.9,0,25.2-11.3,25.2-25.2c0-4.1-3.4-7.5-7.5-7.5s-7.5,3.4-7.5,7.5c0,5.6-4.6,10.2-10.2,10.2s-10.2-4.6-10.2-10.2 C187.8,178.1,192.4,173.6,198,173.6z"/>
+                                        <path d="M388.5,52.5h-13.7V34c0-4.1-3.4-7.5-7.5-7.5h-65.6c-4.1,0-7.5,3.4-7.5,7.5v18.5h-16.8L266.9,5.9c-0.8-3.4-3.8-5.9-7.3-5.9 H136.4c-3.5,0-6.6,2.4-7.3,5.9l-10.5,46.6H76.1V24c0-4.1-3.4-7.5-7.5-7.5h-30c-4.1,0-7.5,3.4-7.5,7.5v28.5H7.5 C3.4,52.5,0,55.9,0,60v247.5c0,4.1,3.4,7.5,7.5,7.5h381c4.1,0,7.5-3.4,7.5-7.5V60C396,55.9,392.6,52.5,388.5,52.5z M309.2,41.5 h50.6v11h-50.6V41.5z M46.1,31.5h15v21h-15V31.5z M124.6,67.5c3.5,0,6.6-2.4,7.3-5.9L142.4,15h111.2l10.5,46.6 c0.8,3.4,3.8,5.9,7.3,5.9H381V108H263.9c-17.6-15.4-40.7-24.7-65.9-24.7s-48.2,9.3-65.9,24.7H15V67.5 C15,67.5,124.6,67.5,124.6,67.5z M112.6,183.7c0-47.1,38.3-85.4,85.4-85.4s85.4,38.3,85.4,85.4c0,47.1-38.3,85.4-85.4,85.4 S112.6,230.9,112.6,183.7z M124.4,252H15V123h103.1c-12.9,16.9-20.5,37.9-20.5,60.8C97.6,210.1,107.7,234.1,124.4,252z M298.4,183.7c0-22.8-7.6-43.9-20.5-60.8H381v129H271.6C288.2,234.1,298.4,210.1,298.4,183.7z M15,300v-33h126.9 c16,10.8,35.4,17.2,56.1,17.2c20.8,0,40.1-6.3,56.1-17.2H381v33L15,300L15,300z"/>
+                                        <path d="M150.2,67.5h95.5c2.3,0,4.4-1,5.9-2.8c1.4-1.8,2-4.1,1.5-6.3l-6.2-27.5c-0.8-3.4-3.8-5.9-7.3-5.9h-83.2 c-3.5,0-6.6,2.4-7.3,5.9l-6.2,27.5c-0.5,2.2,0,4.6,1.5,6.3C145.8,66.5,148,67.5,150.2,67.5z M162.4,40h71.2l2.8,12.5h-76.8 L162.4,40z"/>
+                                    </svg>
+                                    <p class="content__center-item-text content__center-item-text--count">Хлеб: <span id="">2</span></p>
+                                    <p class="content__center-item-text content__center-item-text--status">Подарок отправлен</p>
+                                </div>
+                            </div>
+
+                            <div class="content__center-item">
+                                <div class="content__center-item-line-1">
+                                    <p class="content__center-item-text">Чек №<span id="">2</span></p>
+                                    <p class="content__center-item-text">19.09.2020</p>
+                                    <svg class="content__center-item-svg" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 396 315" style="enable-background:new 0 0 396 315;" xml:space="preserve">
+                                        <path d="M266.7,183.7c0-10.2-2.2-19.9-6.4-29.1c-1.8-3.8-6.2-5.4-10-3.6c-3.8,1.8-5.4,6.2-3.6,10c3.3,7.1,5,14.8,5,22.7 c0,29.6-24.1,53.7-53.7,53.7s-53.7-24.1-53.7-53.7s24.1-53.7,53.7-53.7c10.7,0,21,3.1,29.8,9c3.4,2.3,8.1,1.4,10.4-2.1 s1.4-8.1-2.1-10.4c-11.3-7.6-24.5-11.6-38.2-11.6c-37.9,0-68.7,30.8-68.7,68.7s30.8,68.7,68.7,68.7 C235.9,252.4,266.7,221.6,266.7,183.7z"/>
+                                        <path d="M198,173.6c4.1,0,7.5-3.4,7.5-7.5s-3.4-7.5-7.5-7.5c-13.9,0-25.2,11.3-25.2,25.2c0,13.9,11.3,25.2,25.2,25.2 c13.9,0,25.2-11.3,25.2-25.2c0-4.1-3.4-7.5-7.5-7.5s-7.5,3.4-7.5,7.5c0,5.6-4.6,10.2-10.2,10.2s-10.2-4.6-10.2-10.2 C187.8,178.1,192.4,173.6,198,173.6z"/>
+                                        <path d="M388.5,52.5h-13.7V34c0-4.1-3.4-7.5-7.5-7.5h-65.6c-4.1,0-7.5,3.4-7.5,7.5v18.5h-16.8L266.9,5.9c-0.8-3.4-3.8-5.9-7.3-5.9 H136.4c-3.5,0-6.6,2.4-7.3,5.9l-10.5,46.6H76.1V24c0-4.1-3.4-7.5-7.5-7.5h-30c-4.1,0-7.5,3.4-7.5,7.5v28.5H7.5 C3.4,52.5,0,55.9,0,60v247.5c0,4.1,3.4,7.5,7.5,7.5h381c4.1,0,7.5-3.4,7.5-7.5V60C396,55.9,392.6,52.5,388.5,52.5z M309.2,41.5 h50.6v11h-50.6V41.5z M46.1,31.5h15v21h-15V31.5z M124.6,67.5c3.5,0,6.6-2.4,7.3-5.9L142.4,15h111.2l10.5,46.6 c0.8,3.4,3.8,5.9,7.3,5.9H381V108H263.9c-17.6-15.4-40.7-24.7-65.9-24.7s-48.2,9.3-65.9,24.7H15V67.5 C15,67.5,124.6,67.5,124.6,67.5z M112.6,183.7c0-47.1,38.3-85.4,85.4-85.4s85.4,38.3,85.4,85.4c0,47.1-38.3,85.4-85.4,85.4 S112.6,230.9,112.6,183.7z M124.4,252H15V123h103.1c-12.9,16.9-20.5,37.9-20.5,60.8C97.6,210.1,107.7,234.1,124.4,252z M298.4,183.7c0-22.8-7.6-43.9-20.5-60.8H381v129H271.6C288.2,234.1,298.4,210.1,298.4,183.7z M15,300v-33h126.9 c16,10.8,35.4,17.2,56.1,17.2c20.8,0,40.1-6.3,56.1-17.2H381v33L15,300L15,300z"/>
+                                        <path d="M150.2,67.5h95.5c2.3,0,4.4-1,5.9-2.8c1.4-1.8,2-4.1,1.5-6.3l-6.2-27.5c-0.8-3.4-3.8-5.9-7.3-5.9h-83.2 c-3.5,0-6.6,2.4-7.3,5.9l-6.2,27.5c-0.5,2.2,0,4.6,1.5,6.3C145.8,66.5,148,67.5,150.2,67.5z M162.4,40h71.2l2.8,12.5h-76.8 L162.4,40z"/>
+                                    </svg>
+                                    <p class="content__center-item-text content__center-item-text--count">Хлеб: <span id="">1</span></p>
+                                    <p class="content__center-item-text content__center-item-text--status content__center-item-text--error">Просрочено</p>
+                                </div>
+                            </div>
+
+                            <div class="content__center-item">
+                                    <div class="content__center-item-line-1">
+                                    <p class="content__center-item-text">Чек №<span id="">1</span></p>
+                                    <p class="content__center-item-text">01.09.2020</p>
+                                    <svg class="content__center-item-svg" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 396 315" style="enable-background:new 0 0 396 315;" xml:space="preserve">
+                                        <path d="M266.7,183.7c0-10.2-2.2-19.9-6.4-29.1c-1.8-3.8-6.2-5.4-10-3.6c-3.8,1.8-5.4,6.2-3.6,10c3.3,7.1,5,14.8,5,22.7 c0,29.6-24.1,53.7-53.7,53.7s-53.7-24.1-53.7-53.7s24.1-53.7,53.7-53.7c10.7,0,21,3.1,29.8,9c3.4,2.3,8.1,1.4,10.4-2.1 s1.4-8.1-2.1-10.4c-11.3-7.6-24.5-11.6-38.2-11.6c-37.9,0-68.7,30.8-68.7,68.7s30.8,68.7,68.7,68.7 C235.9,252.4,266.7,221.6,266.7,183.7z"/>
+                                        <path d="M198,173.6c4.1,0,7.5-3.4,7.5-7.5s-3.4-7.5-7.5-7.5c-13.9,0-25.2,11.3-25.2,25.2c0,13.9,11.3,25.2,25.2,25.2 c13.9,0,25.2-11.3,25.2-25.2c0-4.1-3.4-7.5-7.5-7.5s-7.5,3.4-7.5,7.5c0,5.6-4.6,10.2-10.2,10.2s-10.2-4.6-10.2-10.2 C187.8,178.1,192.4,173.6,198,173.6z"/>
+                                        <path d="M388.5,52.5h-13.7V34c0-4.1-3.4-7.5-7.5-7.5h-65.6c-4.1,0-7.5,3.4-7.5,7.5v18.5h-16.8L266.9,5.9c-0.8-3.4-3.8-5.9-7.3-5.9 H136.4c-3.5,0-6.6,2.4-7.3,5.9l-10.5,46.6H76.1V24c0-4.1-3.4-7.5-7.5-7.5h-30c-4.1,0-7.5,3.4-7.5,7.5v28.5H7.5 C3.4,52.5,0,55.9,0,60v247.5c0,4.1,3.4,7.5,7.5,7.5h381c4.1,0,7.5-3.4,7.5-7.5V60C396,55.9,392.6,52.5,388.5,52.5z M309.2,41.5 h50.6v11h-50.6V41.5z M46.1,31.5h15v21h-15V31.5z M124.6,67.5c3.5,0,6.6-2.4,7.3-5.9L142.4,15h111.2l10.5,46.6 c0.8,3.4,3.8,5.9,7.3,5.9H381V108H263.9c-17.6-15.4-40.7-24.7-65.9-24.7s-48.2,9.3-65.9,24.7H15V67.5 C15,67.5,124.6,67.5,124.6,67.5z M112.6,183.7c0-47.1,38.3-85.4,85.4-85.4s85.4,38.3,85.4,85.4c0,47.1-38.3,85.4-85.4,85.4 S112.6,230.9,112.6,183.7z M124.4,252H15V123h103.1c-12.9,16.9-20.5,37.9-20.5,60.8C97.6,210.1,107.7,234.1,124.4,252z M298.4,183.7c0-22.8-7.6-43.9-20.5-60.8H381v129H271.6C288.2,234.1,298.4,210.1,298.4,183.7z M15,300v-33h126.9 c16,10.8,35.4,17.2,56.1,17.2c20.8,0,40.1-6.3,56.1-17.2H381v33L15,300L15,300z"/>
+                                        <path d="M150.2,67.5h95.5c2.3,0,4.4-1,5.9-2.8c1.4-1.8,2-4.1,1.5-6.3l-6.2-27.5c-0.8-3.4-3.8-5.9-7.3-5.9h-83.2 c-3.5,0-6.6,2.4-7.3,5.9l-6.2,27.5c-0.5,2.2,0,4.6,1.5,6.3C145.8,66.5,148,67.5,150.2,67.5z M162.4,40h71.2l2.8,12.5h-76.8 L162.4,40z"/>
+                                    </svg>
+                                    <p class="content__center-item-text content__center-item-text--count">Хлеб: <span id="">1</span></p>
+                                    <p class="content__center-item-text content__center-item-text--status content__center-item-text--success">Просрочено</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="content__bottom">
+                    <p class="content__bottom-title">Подарки</p>
+                    <div class="content__bottom-items">
+
+                        <div class="content__bottom-item">
+                            <div class="content__bottom-item-for-img">
+                                <img class="content__bottom-item-img" src="img/PrivateOffice/present-1.png" alt="">
+                            </div>
+                            <div class="content__bottom-item-for-text">
+                                <p class="content__bottom-item-text content__bottom-item-text--title">Подарок 2ого уровня</p>
+                                <p class="content__bottom-item-text">Подробное описание подарка</p>
+                                <a class="content__bottom-item-text content__bottom-item-text--link" href="#">гиперссылка</a>
+                                <p class="content__bottom-item-text">15.09.2020</p>
+                            </div>
+                        </div>
+
+                        <div class="content__bottom-item">
+                            <div class="content__bottom-item-for-img">
+                                <img class="content__bottom-item-img" src="img/PrivateOffice/present-2.png" alt="">
+                            </div>
+                            <div class="content__bottom-item-for-text">
+                                <p class="content__bottom-item-text content__bottom-item-text--title">Подарок 1ого уровня</p>
+                                <p class="content__bottom-item-text">Подробное описание подарка</p>
+                                <a class="content__bottom-item-text content__bottom-item-text--link" href="#">гиперссылка</a>
+                                <p class="content__bottom-item-text">4.09.2020</p>
+                            </div>
+                        </div>
+
+                        <div class="content__bottom-item">
+                            <div class="content__bottom-item-for-img">
+                                <img class="content__bottom-item-img" src="img/PrivateOffice/present-2.png" alt="">
+                            </div>
+                            <div class="content__bottom-item-for-text">
+                                <p class="content__bottom-item-text content__bottom-item-text--title">Гарантированный подарок</p>
+                                <p class="content__bottom-item-text">Подробное описание подарка</p>
+                                <a class="content__bottom-item-text content__bottom-item-text--link" href="#">гиперссылка</a>
+                                <p class="content__bottom-item-text">1.09.2020</p>
+                                <a class="content__bottom-item-text content__bottom-item-text--link content__bottom-item-text--more" href="#">Навык в Яндексе</a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- <div class="content__bottom-text">
+                        <a href="#" class="content__bottom-link">Навык в Яндексе</a>
+                    </div> -->
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="modal" class="modal-upload mfp-hide">
+        <form class="modal-upload__form" action="https://gerkules-promo.ru/store" method="POST" id="create_article_form" enctype="multipart/form-data">
+            <div class="modal-upload__zone needsclick dropzone dz-clickable" id="document-dropzone">
+                <div class="dz-default dz-message modal-upload__zone-message">
+                    <span class="modal-upload__zone-text">Выберите фото вашего чека</span>
+                </div>
+            </div>
+            <div class="modal-upload__info">
+                <p class="modal-upload__info-text">Размер файла не должен привышать 8 Мб</p>
+                <span class="modal-upload__info-text modal-upload__info-text--link modal-upload__info-text--help">Как сделать фото?
+                    <p class="help-text">Текстовая подсказка</p>
+                </span> 
+            </div>
+            <button class="modal-upload__button" id="button_save" type="submit">Отправить чек на модерацию</button>
+        </form>
+        <p class="modal-upload__message modal-upload__message--success">Чек успешно отправлен на модерацию</p>
+        <p class="modal-upload__message modal-upload__message--error">Чек не отправлен попробуйте еще раз</p>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/dropzone.min.js"></script>
+
+    <script>
+    $('#upload_photos').on('click', function () {
+        event.preventDefault();
+        $.magnificPopup.open({
+            items: {
+                    src: '#modal'
+            },
+        });
+    });
+    </script>
+
+    <script>
+    function unique(arr) {
+    let result = [];
+    for (let str of arr) {
+    if (!result.includes(str)) {
+    result.push(str);
+    }
+    }
+
+    return result;
+    }
+    $('#button_save').on('click', function(){
+    event.preventDefault();
+    
+   
+    var files = $("[name='document[]']");
+    var file = [];
+    $.each(files, function(index, item){
+    file[index] = $(item).val();
+    });
+    console.log(unique(file));
+    var uniqFiles = unique(file);
+    $.ajax({
+    url: "https://gerkules-promo.ru/store",
+            type: 'POST',
+            headers: {
+            'X-CSRF-TOKEN': "7DaIPK7JijaFknEvXxaqZtcpFyFS3JatOVHitgHy"
+
+            },
+            data: {uniqFiles:uniqFiles},
+            dataType: 'json',
+            success: function (response) {
+            console.log(response);
+            if (response.status == 'success') {
+            $("[name='document[]']").remove();
+            alert('Чек успешно сохранен');
+            
+             $(".dz-preview").remove();
+    $(".needsclick ").removeClass('dz-started');
+            $.magnificPopup.close();
+            } else if (response.status == 'error') {
+            $("[name='document[]']").remove();
+            alert(response.message);
+            $(".dz-preview").remove();
+    $(".needsclick ").removeClass('dz-started');
+            $.magnificPopup.close();
+            }
+
+            },
+            error: function (data) {
+            console.log(data);
+            if (data.status === 422) {
+            var errors = $.parseJSON(data.responseText);
+            $.each(errors, function (key, value) {
+            if ($.isPlainObject(value)) {
+            $.each(value, function (key, value) {
+            $('.errorMessage_' + key).text(value);
+            });
+            } else {
+            }
+            });
+            }
+            }
+    });
+    });
+    </script>
+
+    <script>
+    var uploadedDocumentMap = {}
+    Dropzone.options.documentDropzone = {
+    url: 'https://gerkules-promo.ru/storeMedia',
+            maxFilesize: 5, // MB
+            acceptedFiles: 'image/*',
+            dictDefaultMessage: 'Выберите файлы для загрузки',
+            dictFileTooBig: 'Размеры файлов превышают допустимые',
+            dictInvalidFileType: 'Разрешено загружать только изображения',
+            dictCancelUpload: 'Удалить файл',
+            dictRemoveFile: 'Удалить файл',
+            addRemoveLinks: true,
+            headers: {
+            'X-CSRF-TOKEN': "7DaIPK7JijaFknEvXxaqZtcpFyFS3JatOVHitgHy"
+            },
+            success: function (file, response) {
+            $('form').append('<input type="hidden" name="document[]" value="' + response.name + '">')
+                    uploadedDocumentMap[file.name] = response.name
+            },
+            removedfile: function (file) {
+            file.previewElement.remove()
+                    var name = ''
+                    if (typeof file.file_name !== 'undefined') {
+            name = file.file_name
+            } else {
+            name = uploadedDocumentMap[file.name]
+            }
+            $('form').find('input[name="document[]"][value="' + name + '"]').remove()
+            },
+            init: function () {
+                        }
+    }
+    </script>
+</body>
+</html>

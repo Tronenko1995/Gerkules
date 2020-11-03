@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Модерация участников</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+
+<div class="moderate">
+    <div class="moderate__wrap">
+        <div class="moderate__head">
+            <p class="moderate__head-title">Модерация участников</p>
+        </div>
+        <div class="moderate__center">
+            <p class="moderate__center-title">Фильтр:</p>
+            <div class="moderate__center-filters">
+                <div class="moderate__center-filters-left">
+                    <div class="moderate__center-filter">
+                        <label for="filter_phone" class="moderate__center-filter-label">Телефон</label>
+                        <input class="moderate__center-filter-input moderate__center-filter-input--phone" type="text" id="filter_phone" name="filter_phone" placeholder="+7 (XXX) XXX-XX-XX" maxlength="16">
+                    </div>
+                    <div class="moderate__center-filter">
+                        <label for="filter_email" class="moderate__center-filter-label">E-mail</label>
+                        <input class="moderate__center-filter-input moderate__center-filter-input--email" type="text" id="filter_email" name="filter_email" placeholder="e-mail" maxlength="100">
+                    </div>
+                    <div class="moderate__center-filter">
+                        <label for="begin_date_check_registry" class="moderate__center-filter-label">Дата регистрации чека</label>
+                        <div class="moderate__center-filter-for-double">
+                            <input class="moderate__center-filter-input moderate__center-filter-input--begin_date" type="text" id="begin_date_check_registry" name="begin_date_check_registry" placeholder="" maxlength="10">
+                            <input class="moderate__center-filter-input moderate__center-filter-input--end_date" type="text" id="end_date_check_registry" name="end_date_check_registry" placeholder="" maxlength="10">
+                        </div>
+                    </div>
+                    <div class="moderate__center-filter">
+                        <label for="begin_date_buy" class="moderate__center-filter-label">Дата покупки</label>
+                        <div class="moderate__center-filter-for-double">
+                            <input class="moderate__center-filter-input moderate__center-filter-input--begin_date" type="text" id="begin_date_buy" name="begin_date_buy" placeholder="" maxlength="10">
+                            <input class="moderate__center-filter-input moderate__center-filter-input--end_date" type="text" id="end_date_buy" name="end_date_buy" placeholder="" maxlength="10">
+                        </div>
+                    </div>
+                    <div class="moderate__center-filter">
+                        <label for="check_status" class="moderate__center-filter-label">Статус чека</label>
+                        <select name="check_status" id="check_status" class="moderate__center-filter-select moderate__center-filter-select--check_status">
+                            <option value="Все статусы" selected>Все статусы</option>
+                            <option value="На модерации">На модерации</option>
+                            <option value="Принят">Принят</option>
+                            <option value="Отклонен">Отклонен</option>
+                        </select>
+                    </div>
+                    <div class="moderate__center-filter">
+                        <label for="record_status" class="moderate__center-filter-label">Статус записи</label>
+                        <select name="record_status" id="record_status" class="moderate__center-filter-select moderate__center-filter-select--check_status">
+                            <option value="all" selected>Все статусы</option>
+                            <option value="active">Активна</option>
+                            <option value="notActive">Неактивна</option>
+                            <option value="lastWeek">Прошлая неделя</option>
+                        </select>
+                    </div>
+                    <div class="moderate__center-filter moderate__center-filter--for-button">
+                        <button class="moderate__center-filter-button">Искать</button>
+                    </div>
+                </div>
+                <div class="moderate__center-filters-right">
+                    <div class="moderate__center-filter">
+                        <label for="sort_by" class="moderate__center-filter-label">Сортировка даты</label>
+                        <select name="sort_by" id="sort_by" class="moderate__center-filter-select moderate__center-filter-select--sort">
+                            <option value="desc">По возрастанию</option>
+                            <option value="asc">По убыванию</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="moderate__bottom">
+            <div class="moderate__bottom-item MegaClick">
+                <label class="moderate__bottom-label">
+                    <p class="moderate__bottom-label-text">Имя</p>
+                    <p id="name" class="moderate__bottom-item-text click">Иван Петров</p>
+                </label>
+                <label class="moderate__bottom-label">
+                    <p class="moderate__bottom-label-text">Телефон</p>
+                    <p id="phone" class="moderate__bottom-item-text click">+79815000000</p>
+                </label>
+                <label class="moderate__bottom-label">
+                    <p class="moderate__bottom-label-text">e-mail</p>
+                    <p id="email" class="moderate__bottom-item-text click">ivanpetrovich@mail.ru</p>
+                </label>
+                <label class="moderate__bottom-label">
+                    <p class="moderate__bottom-label-text">дата регистрации чека</p>
+                    <p id="dateRegistry" class="moderate__bottom-item-text moderate__bottom-item-text--date click">25.09.2020</p>
+                </label>
+                <label class="moderate__bottom-label">
+                    <p class="moderate__bottom-label-text">&nbsp;</p>
+                    <p id="timeRegistry" class="moderate__bottom-item-text moderate__bottom-item-text--time click">11:23</p>
+                </label>
+                <label class="moderate__bottom-label">
+                    <p class="moderate__bottom-label-text">&nbsp;</p>
+                    <img id="image" class="moderate__bottom-item-img click" src="img/image.jpg" alt="image">
+                </label>
+                <label class="moderate__bottom-label">
+                    <p class="moderate__bottom-label-text">Статус</p>
+                    <p id="status" class="moderate__bottom-item-text click">Новый чек</p>
+                </label>
+                <label class="moderate__bottom-label">
+                    <p class="moderate__bottom-label-text">Номер чека</p>
+                    <p id="check_number" class="moderate__bottom-item-text click">№56464515</p>
+                </label>
+                <label class="moderate__bottom-label">
+                    <p class="moderate__bottom-label-text">Дата проверки</p>
+                    <p id="buy_time" class="moderate__bottom-item-text moderate__bottom-item-text--time click">15:11</p>
+                </label>
+                <label class="moderate__bottom-label">
+                    <p class="moderate__bottom-label-text">Торговая сеть</p>
+                    <p id="market" class="moderate__bottom-item-text click">Перекресток</p>
+                </label>
+                <label class="moderate__bottom-label">
+                    <p class="moderate__bottom-label-text">Кол-во хлеба</p>
+                    <p id="breads" class="moderate__bottom-item-text moderate__bottom-item-text--number click">2</p>
+                </label>
+                <label class="moderate__bottom-label">
+                    <p class="moderate__bottom-label-text">Подарок</p>
+                    <p id="" class="moderate__bottom-item-text click">Подарок 1й категории</p>
+                </label>
+                
+                
+                
+                
+                <input id="inside_comment" class="moderate__bottom-item-input click" type="text" value="Коментарий для внутреннего пользователя" readonly>
+            </div>
+            <div class="moderate__bottom-item MegaClick">
+                <p id="name" class="moderate__bottom-item-text click">Сергей Иванов</p>
+                <p id="phone" class="moderate__bottom-item-text click">+79815837914</p>
+                <p id="email" class="moderate__bottom-item-text click">sergivan86@mail.ru</p>
+                <p id="dateRegistry" class="moderate__bottom-item-text moderate__bottom-item-text--date click">25.09.2020</p>
+                <p id="timeRegistry" class="moderate__bottom-item-text moderate__bottom-item-text--time click">10:20</p>
+                <img id="image" class="moderate__bottom-item-img click" src="img/image.jpg" alt="image">
+                <p id="status" class="moderate__bottom-item-text click">Новый чек</p>
+                <p id="check_number" class="moderate__bottom-item-text click">№56464843</p>
+                <p id="buy_time" class="moderate__bottom-item-text moderate__bottom-item-text--time click">00:01</p>
+                <p id="market" class="moderate__bottom-item-text click">Ашан</p>
+                <p id="breads" class="moderate__bottom-item-text moderate__bottom-item-text--number click">1</p>
+                <p id="" class="moderate__bottom-item-text click">Подарок 2й категории</p>
+                <input id="inside_comment" class="moderate__bottom-item-input click" type="text" value="Коментарий для внутреннего пользователя" readonly>
+            </div>  
+        </div>
+        <div class="moderate__pagination">
+            <a class="moderate__pagination-link" href="#">1</a>
+            <a class="moderate__pagination-link moderate__pagination-link--active" href="#">2</a>
+            <a class="moderate__pagination-link" href="#">3</a>
+            <a class="moderate__pagination-link" href="#">4</a>
+            <a class="moderate__pagination-link" href="#">5</a>
+            <a class="moderate__pagination-link" href="#">6</a>
+        </div>
+    </div>
+</div>
+
+<div class="moderate-popup mfp-hide" id="modal">
+    <div class="moderate-popup__wrap">
+        <div class="moderate-popup__top">
+            <p class="moderate-popup__top-title">Модерация участников</p>
+        </div>
+        <div class="moderate-popup__center">
+            <a class="moderate-popup__center-link" target="_blank" href="/img/418977.jpg">
+                <img class="moderate-popup__center-img" src="img/418977.jpg" alt="image">
+            </a>
+            <a class="moderate-popup__center-link" target="_blank" href="/img/418977.jpg">
+                <img class="moderate-popup__center-img" src="img/418977.jpg" alt="image">
+            </a>
+            <a class="moderate-popup__center-link" target="_blank" href="/img/418977.jpg">
+                <img class="moderate-popup__center-img" src="img/418977.jpg" alt="image">
+            </a>
+        </div>
+        <div class="moderate-popup__bottom">
+            <div class="moderate-popup__bottom-line-1">
+                <p id="modal_name" class="moderate-popup__bottom-text"></p>
+                <p id="modal_phone" class="moderate-popup__bottom-text"></p>
+                <p id="modal_email" class="moderate-popup__bottom-text"></p>
+                <p id="modal_date" class="moderate-popup__bottom-text"></p>
+                <p id="modal_time" class="moderate-popup__bottom-text"></p>
+                <p id="modal_status" class="moderate-popup__bottom-text"></p>
+                <label class="moderate-popup__bottom-label">
+                    <p class="moderate-popup__bottom-label-text">Номер чека</p>
+                    <input class="moderate-popup__bottom-input" type="text" placeholder="">
+                </label>
+                <label class="moderate-popup__bottom-label">
+                    <p class="moderate-popup__bottom-label-text">Дата</p>
+                    <input class="moderate-popup__bottom-input" id="input_modal_buy_time" type="text" placeholder="">
+                </label>
+                <label class="moderate-popup__bottom-label">
+                    <p class="moderate-popup__bottom-label-text">Торговая сеть</p>
+                    <input class="moderate-popup__bottom-input" type="text" placeholder="">
+                </label>
+                <label class="moderate-popup__bottom-label">
+                    <p class="moderate-popup__bottom-label-text">Количество</p>
+                    <input class="moderate-popup__bottom-input" type="text" placeholder="">
+                </label>
+            </div>
+            <div class="moderate-popup__bottom-line-2">
+                <input class="moderate-popup__bottom-input moderate-popup__bottom-input--line-2" type="text" placeholder="Комендарий для внутреннего пользования">
+                <input class="moderate-popup__bottom-input moderate-popup__bottom-input--line-2" type="text" placeholder="Комендарий для отображения в ЛК участника">
+            </div>
+            <div class="moderate-popup__bottom-line-3">
+                <div class="moderate-popup__bottom-line-3-left">
+                    <div class="moderate-popup__bottom-line-3-for-button">
+                        <label class="moderate-popup__bottom-line-3-label">
+                            <p class="moderate-popup__bottom-line-3-text">Подарок 1й категории</p>
+                            <select class="moderate-popup__bottom-line-3-select" name="" id="">
+                                <option value="">Мини колонка Яндекс</option>
+                                <option value="">Конструктор Лего</option>
+                                <option value="">Часы детские</option>
+                                <option value="">Часы взрослые</option>
+                                <option value="">Сертификат (маг Перекресток) - 300</option>
+                                <option value="">Сертификат (маг Перекресток) - 500</option>
+                                <option value="">Сертификат (маг Перекресток) - 1000</option>
+                            </select>
+                        </label>
+                        <button class="moderate-popup__bottom-line-3-button">Отправить</button>
+                    </div>
+                    <!-- <div class="moderate-popup__bottom-line-3-for-button">
+                        <div class="moderate-popup__bottom-line-3-text">Подарок 2й категории</div>
+                        <button class="moderate-popup__bottom-line-3-button">Отправить</button>
+                    </div> -->
+                </div>
+                <div class="moderate-popup__bottom-line-3-right">
+                    <button id="save_modal" class="moderate-popup__bottom-line-3-button">Сохранить</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/jquery.inputmask.min.js"></script>
+<script>
+const characterList = document.querySelector('.moderate__bottom')
+characterList.addEventListener('click', toggleDone);
+function toggleDone(event) {
+    event.preventDefault();
+    if (event.target.matches('.MegaClick')) {
+        var element = event.target;
+        getData(element);
+    } else if (event.target.matches('.click')) {  
+        var element = $(event.target).parent();
+        getData(element);
+    }
+
+}
+
+function getData(element) {
+
+var name = $(element).children('#name').text();
+$('#modal_record_id').val($(element).attr('recordId'));
+
+$('#modal_name').text($(element).children('#name').text());
+$('#modal_phone').text($(element).children('#phone').text());
+$('#modal_email').text($(element).children('#email').text());
+$('#modal_date').text($(element).children('#dateRegistry').text());
+$('#modal_time').text($(element).children('#timeRegistry').text());
+$('#modal_photo').text($(element).children('#image').text());
+$('#modal_status').text($(element).children('#status').text());
+
+$('#input_modal_check_number').val($(element).children('#check_number').text());
+$('#input_modal_buy_time').val($(element).children('#buy_time').text());
+$('#input_modal_market').val($(element).children('#market').text());
+$('#input_modal_breads').val($(element).children('#breads').text());
+
+$('#input_modal_inside_comment').val($(element).children('#inside_comment').text());
+$.magnificPopup.open({
+    items: {
+        src: '#modal'
+    },
+
+}); 
+}
+
+/* PAGINATION */
+$('.moderate__pagination-link').on('click', function() {
+    console.log($(this).text());
+    $('.moderate__pagination-link').removeClass('moderate__pagination-link--active');
+    $(this).addClass('moderate__pagination-link--active');
+});
+
+</script>
+<script>
+    /* INPUT MASK */
+$(document).ready(function(){
+
+    $("#begin_date_check_registry").inputmask("^9-&9-%#99", {
+        placeholder: "dd-mm-yyyy",
+        clearIncomplete: true,
+        definitions: {
+            "^": {
+                validator: "[0-3]"
+            },
+            "&": {
+                validator: "[0-1]"
+            },
+            "%": {
+                validator: "[2]"
+            },
+            "#": {
+                validator: "[0]"
+            }
+        }
+    });
+    $("#end_date_check_registry").inputmask("^9-&9-%#99", {
+        placeholder: "dd-mm-yyyy",
+        clearIncomplete: true,
+        definitions: {
+            "^": {
+                validator: "[0-3]"
+            },
+            "&": {
+                validator: "[0-1]"
+            },
+            "%": {
+                validator: "[2]"
+            },
+            "#": {
+                validator: "[0]"
+            }
+        }
+    });
+    $("#begin_date_buy").inputmask("^9-&9-%#99", {
+        placeholder: "dd-mm-yyyy",
+        clearIncomplete: true,
+        definitions: {
+            "^": {
+                validator: "[0-3]"
+            },
+            "&": {
+                validator: "[0-1]"
+            },
+            "%": {
+                validator: "[2]"
+            },
+            "#": {
+                validator: "[0]"
+            }
+        }
+    });
+    $("#end_date_buy").inputmask("^9-&9-%#99", {
+        placeholder: "dd-mm-yyyy",
+        clearIncomplete: true,
+        definitions: {
+            "^": {
+                validator: "[0-3]"
+            },
+            "&": {
+                validator: "[0-1]"
+            },
+            "%": {
+                validator: "[2]"
+            },
+            "#": {
+                validator: "[0]"
+            }
+        }
+    });
+    $("#input_modal_buy_time").inputmask("^9-&9-%#99", {
+        placeholder: "dd-mm-yyyy",
+        clearIncomplete: true,
+        definitions: {
+            "^": {
+                validator: "[0-3]"
+            },
+            "&": {
+                validator: "[0-1]"
+            },
+            "%": {
+                validator: "[2]"
+            },
+            "#": {
+                validator: "[0]"
+            }
+        }
+    });
+
+});
+</script>
+</body>
+</html>

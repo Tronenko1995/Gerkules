@@ -1,0 +1,694 @@
+@import '../../colors';
+.PrivateOffice {
+
+    & .prize-presents {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        background-image: url('../img/PrivateOffice/prize-bg.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        &__wrap {
+            margin-top: 90px;
+            margin-bottom: 90px;
+            width: 1100px;
+            display: flex;
+            // outline: 1px solid blue;
+        }
+        &__title {
+            transform: translate(-50px, 0);
+
+            &-text {
+                font-family: 'TTMilksScript-Regular';
+                font-size: 45px;
+                color: #fff;
+                writing-mode: vertical-rl;
+                transform: rotate(180deg);
+            }
+        }
+
+        &__block {
+            display: inline-flex;
+            flex-direction: column;
+            margin-left: 60px;
+            outline: none;
+
+            &-text {
+                margin-top: 10px;
+                font-size: 20px;
+                color: #fff;
+                font-family: 'Roboto-Light';
+                text-align: center;
+
+                &--description {
+                    display: none;
+                }
+            }
+        }
+
+        &__slider {
+            width: 750px;
+            position: relative;
+
+            &-block {
+                display: inline-flex;
+                flex-direction: column;
+                outline: none;
+            }
+            
+            &-text {
+                margin-top: 10px;
+                font-size: 20px;
+                color: #fff;
+                font-family: 'Roboto-Light';
+                text-align: center;
+
+                &--description {
+                    display: none;
+                }
+            }
+
+            &-item {
+                padding: 6px;
+                width: 228px;
+                height: 214px;
+                position: relative;
+                background: $PrivateOfficeMainBg;
+    
+                &::after {
+                    content: '';
+                    z-index: -1;
+                    position: absolute;
+                    left: -1px;
+                    top: -1px;
+                    width: 230px;
+                    height: 216px;
+                    background: linear-gradient(-131deg, rgba(255,246,205,1) 0%, rgba(239,189,38,1) 20%, rgba(252,251,148,1) 36%, rgba(252,251,148,1) 43%, rgba(255,83,25,1) 100%);
+                }
+
+                &-for-container {
+                    width: 216px;
+                    height: 202px;
+                    background: linear-gradient(-131deg, rgba(255,246,205,.3) 0%, rgba(239,189,38,1) 20%, rgba(252,251,148,0.3) 36%, rgba(252,251,148,0.3) 43%, rgba(255,83,25,0.3) 100%);
+                    padding: 1px;
+                }
+                &-container {
+                    width: 214px;
+                    height: 200px;
+                    background: $PrivateOfficeMainBg;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    &-img {
+                        max-width: 250px;
+                        max-height: 250px;
+                    }
+                    // &-text {
+                    //     position: absolute;
+                    //     top: 5px;
+                    //     font-size: 20px;
+                    //     color: #fff;
+                    //     font-family: 'Roboto-Light';
+                    // }
+                }
+            }
+        }
+        &__for-item {
+            margin-left: 0px;
+        }
+        &__item {
+            padding: 6px;
+            width: 228px;
+            height: 214px;
+            position: relative;
+            background: $PrivateOfficeMainBg;
+
+            &::after {
+                content: '';
+                z-index: -1;
+                position: absolute;
+                left: -1px;
+                top: -1px;
+                width: 230px;
+                height: 216px;
+                background: linear-gradient(-131deg, rgba(255,246,205,1) 0%, rgba(239,189,38,1) 20%, rgba(252,251,148,1) 36%, rgba(252,251,148,1) 43%, rgba(255,83,25,1) 100%);
+            }
+
+            &-for-container {
+                width: 216px;
+                height: 202px;
+                background: linear-gradient(-131deg, rgba(255,246,205,.3) 0%, rgba(239,189,38,1) 20%, rgba(252,251,148,0.3) 36%, rgba(252,251,148,0.3) 43%, rgba(255,83,25,0.3) 100%);
+                padding: 1px;
+            }
+            &-container {
+                width: 214px;
+                height: 200px;
+                background: $PrivateOfficeMainBg;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                &-img {
+                    width: 161px;
+                    height: 239px;
+                    max-width: 250px;
+                    max-height: 250px;
+                }
+            }
+        }
+        &__bottom {
+            margin-bottom: 45px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            &-title {
+                font-size: 22px;
+                color: #fff;
+                text-align: center;
+                font-family: 'Roboto-Regular';
+            }
+            &-text {
+                font-family: 'Roboto-Light';
+                font-size: 17px;
+                color: #fff;
+                text-align: center;
+                margin-top: 15px;
+
+                &--right {
+                    width: 230px;
+                }
+            }
+        }
+        &__modal {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            &-title {
+                font-family: 'TTMilksScript-Regular';
+                font-size: 30px;
+                color: #ff581b;
+                padding-bottom: 40px;
+            }
+            &-img {
+                max-width: 500px;
+                max-height: 500px;
+                margin-bottom: 10px;
+                transform: scale(1.2);
+            }
+            &-description {
+                padding-top: 30px;
+                color: #666;
+                font-family: Roboto-Light;
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+
+.prize-presents__slider .slick-arrow {
+	font-size: 0;
+	position: absolute;
+	width: 33px;
+	height: 33px;
+	background: #FFFFFF;
+	box-shadow: 0px 4px 17px rgba(0, 0, 0, 0.06);
+	border-radius: 50%;
+    top: 40%;
+    // transform: scaleY(-50%);
+	z-index: 10;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.prize-presents__slider .slick-prev {
+	background-size: cover;
+	background-repeat: no-repeat;
+	left: 0px;
+
+	&:after {
+		position: absolute;
+		content: '';
+		width: 14px;
+		height: 19px;
+		background: url('../img/PrivateOffice/arrow-orange.svg');
+		background-size: cover;
+        background-repeat: no-repeat;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    &:hover {
+        left: -3px;
+    }
+}
+.prize-presents__slider .slick-next {
+	transform: rotate(180deg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	right: -7px;
+	&:after {
+		position: absolute;
+		content: '';
+		width: 14px;
+		height: 19px;
+		background: url('../img/PrivateOffice/arrow-orange.svg');
+		background-size: cover;
+        background-repeat: no-repeat;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    &:hover {
+        right: -10px;
+    }
+}
+
+.prize-presents__slider .slick-slide {
+    padding: 15px;
+    outline: none;
+}
+
+.prize-presents__slider {
+    margin: -15px;
+}
+
+
+
+
+@media (max-width: 1225px) {
+
+    .PrivateOffice {
+
+        & .prize-presents {
+            justify-content: center;
+            margin-top: 50px;
+            position: relative;
+            background-image :none;
+            margin-bottom: 40px;
+    
+            &__wrap {
+                margin-top: 30px;
+                margin-bottom: 0;
+                // width: 1100px;
+                // display: flex;
+                flex-direction: column;
+                padding-left: 15px;
+                align-items: center;
+                padding: 10px 0;
+            }
+            &__title {
+                margin-right: 0px;
+                transform: none;
+    
+                &-text {
+                    // font-family: 'TTMilksScript-Regular';
+                    font-size: 60px;
+                    // color: #fff;
+                    writing-mode: lr;
+                    transform: rotate(0deg);
+                }
+            }
+    
+            &__slider {
+                margin-top: 30px;
+                width: 750px;//260
+                position: relative;
+                margin-left: 0px;
+    
+                &-item {
+                    padding: 6px;
+                    width: 228px;
+                    height: 214px;
+                    position: relative;
+                    background: $PrivateOfficeMainBg;
+        
+                    &::after {
+                        content: '';
+                        z-index: -1;
+                        position: absolute;
+                        left: -1px;
+                        top: -1px;
+                        width: 230px;
+                        height: 216px;
+                        background: linear-gradient(-131deg, rgba(255,246,205,1) 0%, rgba(239,189,38,1) 20%, rgba(252,251,148,1) 36%, rgba(252,251,148,1) 43%, rgba(255,83,25,1) 100%);
+                    }
+    
+                    &-for-container {
+                        width: 216px;
+                        height: 202px;
+                        background: linear-gradient(-131deg, rgba(255,246,205,.3) 0%, rgba(239,189,38,1) 20%, rgba(252,251,148,0.3) 36%, rgba(252,251,148,0.3) 43%, rgba(255,83,25,0.3) 100%);
+                        padding: 1px;
+                    }
+                    &-container {
+                        width: 214px;
+                        height: 200px;
+                        background: $PrivateOfficeMainBg;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+    
+                        &-img {
+                            max-width: 250px;
+                            max-height: 250px;
+                        }
+                    }
+                }
+            }
+            &__for-item {
+                margin-left: 0px;
+            }
+            &__item {
+                padding: 6px;
+                width: 228px;
+                height: 214px;
+                position: relative;
+                background: $PrivateOfficeMainBg;
+    
+                &::after {
+                    content: '';
+                    z-index: -1;
+                    position: absolute;
+                    left: -1px;
+                    top: -1px;
+                    width: 230px;
+                    height: 216px;
+                    background: linear-gradient(-131deg, rgba(255,246,205,1) 0%, rgba(239,189,38,1) 20%, rgba(252,251,148,1) 36%, rgba(252,251,148,1) 43%, rgba(255,83,25,1) 100%);
+                }
+    
+                &-for-container {
+                    width: 216px;
+                    height: 202px;
+                    background: linear-gradient(-131deg, rgba(255,246,205,.3) 0%, rgba(239,189,38,1) 20%, rgba(252,251,148,0.3) 36%, rgba(252,251,148,0.3) 43%, rgba(255,83,25,0.3) 100%);
+                    padding: 1px;
+                }
+                &-container {
+                    width: 214px;
+                    height: 200px;
+                    background: $PrivateOfficeMainBg;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+    
+                    &-img {
+                        width: 161px;
+                        height: 239px;
+                        max-width: 250px;
+                        max-height: 250px;
+                    }
+                }
+            }
+            &__bottom {
+                margin-bottom: 30px;//
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+    
+                &-title {
+                    font-size: 30px;
+                    color: #fff;
+                    text-align: left;
+                    font-family: 'Roboto-Regular';
+                }
+                &-text {
+                    font-family: 'Roboto-Light';
+                    font-size: 17px;
+                    color: #fff;
+                    text-align: left;
+                    margin-top: 20px;//
+                    width: auto;//
+    
+                    &--right {
+                        width: auto;
+                    }
+                }
+            }
+            &__right {
+                margin-top: 100px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            &__block {
+                margin-left: 0;
+            }
+        }
+    }
+    
+
+
+}
+
+
+
+@media (max-width: 830px) {
+
+    .PrivateOffice {
+
+        & .prize-presents {
+
+    
+            &__wrap {
+
+            }
+            &__title {
+
+    
+                &-text {
+
+                }
+            }
+    
+            &__slider {
+
+                width: 507px;//260
+            }
+        }
+    }
+}
+
+
+
+
+
+
+@media (max-width: 750px) {
+
+    .PrivateOffice {
+
+        & .prize-presents {
+            justify-content: center;
+            margin-top: 50px;
+            position: relative;
+            background-image :none;
+            margin-bottom: 40px;
+    
+            &__wrap {
+                margin-top: 30px;
+                margin-bottom: 0;
+                // width: 1100px;
+                // display: flex;
+                flex-direction: column;
+                padding-left: 15px;
+                align-items: center;
+                padding: 10px 10px;
+            }
+            &__title {
+                // margin-right: 50px;
+    
+                &-text {
+                    // font-family: 'TTMilksScript-Regular';
+                    font-size: 32px;
+                    // color: #fff;
+                    writing-mode: lr;
+                    transform: rotate(0deg);
+                }
+            }
+            &__left {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+    
+            &__slider {
+                margin-top: 30px;
+                width: 260px;//260
+                position: relative;
+                margin-left: 0px;
+    
+                &-item {
+                    padding: 6px;
+                    width: 228px;
+                    height: 214px;
+                    position: relative;
+                    background: $PrivateOfficeMainBg;
+        
+                    &::after {
+                        content: '';
+                        z-index: -1;
+                        position: absolute;
+                        left: -1px;
+                        top: -1px;
+                        width: 230px;
+                        height: 216px;
+                        background: linear-gradient(-131deg, rgba(255,246,205,1) 0%, rgba(239,189,38,1) 20%, rgba(252,251,148,1) 36%, rgba(252,251,148,1) 43%, rgba(255,83,25,1) 100%);
+                    }
+    
+                    &-for-container {
+                        width: 216px;
+                        height: 202px;
+                        background: linear-gradient(-131deg, rgba(255,246,205,.3) 0%, rgba(239,189,38,1) 20%, rgba(252,251,148,0.3) 36%, rgba(252,251,148,0.3) 43%, rgba(255,83,25,0.3) 100%);
+                        padding: 1px;
+                    }
+                    &-container {
+                        width: 214px;
+                        height: 200px;
+                        background: $PrivateOfficeMainBg;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+    
+                        &-img {
+                            max-width: 250px;
+                            max-height: 250px;
+                        }
+                    }
+                }
+            }
+            &__for-item {
+                margin-left: 0px;
+            }
+            &__item {
+                padding: 6px;
+                width: 228px;
+                height: 214px;
+                position: relative;
+                background: $PrivateOfficeMainBg;
+    
+                &::after {
+                    content: '';
+                    z-index: -1;
+                    position: absolute;
+                    left: -1px;
+                    top: -1px;
+                    width: 230px;
+                    height: 216px;
+                    background: linear-gradient(-131deg, rgba(255,246,205,1) 0%, rgba(239,189,38,1) 20%, rgba(252,251,148,1) 36%, rgba(252,251,148,1) 43%, rgba(255,83,25,1) 100%);
+                }
+    
+                &-for-container {
+                    width: 216px;
+                    height: 202px;
+                    background: linear-gradient(-131deg, rgba(255,246,205,.3) 0%, rgba(239,189,38,1) 20%, rgba(252,251,148,0.3) 36%, rgba(252,251,148,0.3) 43%, rgba(255,83,25,0.3) 100%);
+                    padding: 1px;
+                }
+                &-container {
+                    width: 214px;
+                    height: 200px;
+                    background: $PrivateOfficeMainBg;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+    
+                    &-img {
+                        width: 161px;
+                        height: 239px;
+                        max-width: 250px;
+                        max-height: 250px;
+                    }
+                }
+            }
+            &__bottom {
+                margin-bottom: 30px;//
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+    
+                &-title {
+                    font-size: 22px;
+                    color: #fff;
+                    text-align: left;
+                    font-family: 'Roboto-Regular';
+                }
+                &-text {
+                    font-family: 'Roboto-Light';
+                    font-size: 16px;
+                    color: #fff;
+                    text-align: left;
+                    margin-top: 20px;//
+                    width: auto;//
+                    text-align: center;
+    
+                    &--right {
+                        width: auto;
+                    }
+                }
+            }
+            &__right {
+                margin-top: 40px;
+            }
+        }
+    }
+    
+    .prize-presents__slider .slick-prev {
+        left: 0px;
+        &:hover {
+            left: -3px;
+        }
+    }
+    .prize-presents__slider .slick-next {
+        right: 0px;
+        &:hover {
+            right: -3px;
+        }
+    }
+}
+
+
+@media(max-width: 450px) {
+
+    .PrivateOffice {
+
+        & .prize-presents {
+
+            &__modal {
+                padding: 10px 5px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+                &-title {
+                    font-family: 'TTMilksScript-Regular';
+                    font-size: 27px;
+                    color: #ff581b;
+                    padding-top: 20px;
+                    padding-bottom: 20px;
+                }
+                &-img {
+                    max-width: 300px;
+                    max-height: 300px;
+                    margin-bottom: 10px;
+                    transform: scale(1.1);
+                }
+                &-description {
+                    padding-top: 15px;
+                    color: #666;
+                    font-family: Roboto-Light;
+                    font-size: 15px;
+                }
+            }
+        }
+
+    }
+
+}
